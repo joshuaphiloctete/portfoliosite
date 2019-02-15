@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    text-transform: uppercase;
+    
+    
+}
+
+html {
+    width: 100%;
+    
+    
+}
+
+body{
+    background-color: white;
+    font-family: 'Chivo', sans-serif;
+    background-size: cover;
+    
+    
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    display: grid;  
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+/* @keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 40px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+  
+/*      animation: 1s ease-out 0s 1 slideInFromRight; */
+    
+        
+}
+
+.nav img {
+    float: left;
+    margin-left: 20px;
+/*     max-width: 10%; */
+
+}
+
+.nav ul {
+    float: right;
+    padding: 5px 20px;
+    list-style: none;
+    text-align: right;
+    font-size: 80%;
+    font-family: 'Playfair Display', serif;
+    
+    
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 8px 8px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav ul li:hover {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.nav ul li:visited { 
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li:focus { 
+    text-decoration: none; 
+    color: white;
+}
+
+.nav ul li:active { 
+    text-decoration: none; 
+    color: white;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav a:hover 
+{
+     color: inherit; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+.header {
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    background-image: url(https://cdn.glitch.com/fe2ecc87-4a0a-4cf6-8553-be916657597d%2Fjoshvector.png?1537332509269);
+    background-size: 90vh; /*could be 25%*/
+    background-position-x: right;
+    background-repeat: no-repeat;
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+    background-color: #111;
+    color: white;
+    background-image: url(https://cdn.glitch.com/fe2ecc87-4a0a-4cf6-8553-be916657597d%2Fjoshvector.png?1537332509269);
+    background-size: 300px; /*could be 25%*/
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+}
+
+#sitetitle {
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;  /*Gives that scrolling effect as the typing happens*/ 
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+@media only screen and (max-width: 700px) {
+  #sitetitle {
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5;
+    padding-left: 5%;
+    font-family: 'Oswald', sans-serif;
+    
+     overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+/*     margin: 0 auto;  Gives that scrolling effect as the typing happens */ 
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+   
+}
+
+}
+
+h1 {
+    display:  inline;
+    font-size: 60px;
+    font-weight: 1000;
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 30px;
+      margin-top: 200px;
+  }
+}
+
+h4 {
+    /***text-decoration: underline;***/
+    font-size: 40px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+  h4 {
+    font-size:20px;
+  }
+}
+
+.content {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow-x: hidden;
+    
+/*     animation: 1s ease-out 0s 1 slideInFromRight; */
+}
+
+
+
+#bio img {
+  
+  height: 60%;
+  width: 28%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+   float:left;
+/*   padding-right: 5px; */
+  display: block; 
+}
+
+@media only screen and (max-width: 600px) {
+    #bio img {
+  height: 60%;
+  width: 30%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  float: none;
+  display: block; 
+}
+    
+  }
+
+#bio-header {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+  
+    
+}
+
+#bio {
+    margin-bottom: 20px; 
+    text-align: left;
+    overflow: visible;
+    float: right;
+    
+}
+
+#bio p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 65%;
+    line-height: 3;
+    overflow: visible;
+/*     border: 1px solid black; */
+/*    border-radius: 20px;*/
+    padding-left: 30px;
+    display: block;
+    float: right;  
+    border-left: 1px solid black;
+    text-transform: none;
+    font-family: 'Playfair Display', serif;
+  
+}
+
+#bio a {
+    color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  #bio p {
+    font-size: 12px;
+    width: 95%;
+    text-align: center;
+    border-left: 0px;
+    float: none;
+    padding-left: 0px;
+  }
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.portfolioheader {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+#portfolio {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 90%;  
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    
+       
+}
+   
+#portfolio img{ 
+    margin: 20px 10px;
+    width: 40%;
+    height: 50%;
+}
+
+   
+
+#footer {
+    width: auto;
+/*     padding-top: 10px;
+    padding-bottom: 10px; */
+    text-align: center;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    
+        
+}
+
+#footer h2 {
+    margin: 10px;
+    font-weight: 1;
+    text-decoration: underline;
+    
+}
+
+#footer ul {
+    padding: 5px 10px;
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    
+    
+}
+
+#footer ul li {
+    display: inline-block;
+/*     padding: 10px 10px; */
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+    
+
+
+a {
+  text-transform: none;
+  color: white;
+}
+
+a:visited {
+  text-transform: none;
+  color: inherit;
+}
