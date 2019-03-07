@@ -323,6 +323,7 @@ h4 {
     border-left: 0px;
     float: none;
     padding-left: 0px;
+    margin-bottom: 2%;
   }
 }
 
@@ -343,13 +344,29 @@ h4 {
 #portfolio2 {
     margin-top: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     width: 90%;  
-    padding-bottom: 10%;
+    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     
        
+}
+
+#portfolio2 p {
+margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 12px;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    
+    
+  }
 }
 
 
@@ -358,6 +375,7 @@ h4 {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  margin: 0 auto;
   
 }
 .iframe-container iframe{
@@ -366,14 +384,22 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
+}
+
+#portfolio2 img {
+ 
+  width: 100%;
+  height: 90%;
+  margin: 0 auto;
 }
 
 #portfolio {
-    margin-top: 20px;
+    margin-top: 2%;
     text-align: center;
     margin-bottom: 20px;
     width: 90%;  
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
     
@@ -410,8 +436,9 @@ h4 {
 #footer ul {
     padding: 5px 10px;
     list-style: none;
-    float: center;
+    float: none;
     font-size: 15px;
+    margin: 0 auto;
     
     
 }
